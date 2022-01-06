@@ -38,3 +38,14 @@ sub1.fq และ sub2.fq
 8. กดดูผล fastQC 
 ![image](https://user-images.githubusercontent.com/70691598/148349994-36dd7490-19b1-4d85-b852-9354b2561cf6.png)
 ![image](https://user-images.githubusercontent.com/70691598/148350073-0516ab81-70d1-412d-8ba6-2ba25ab177fd.png)
+
+9. กดดูผลลัพท์ Krona pie chart
+คลิกที่รูปดวงตา
+
+![image](https://user-images.githubusercontent.com/70691598/148361196-f0e840be-b60b-44f9-b3df-f5547249dd50.png)
+
+ลองกดที่ปุ่มต่าง ๆ สังเกตการเปลี่ยนแปลงที่เกิดขึ้นบนกราฟ
+
+![image](https://user-images.githubusercontent.com/70691598/148361362-3ced911c-66db-4e0a-9297-85eb6d5fb016.png)
+
+
