@@ -22,3 +22,7 @@ sub1.fq และ sub2.fq
  ![image](https://user-images.githubusercontent.com/70691598/148317190-ad5d8fa7-d83a-4f5a-b532-049015e5ae00.png)
 
  2.3 sequences มีความยาวกี่เบส
+
+3. อัพโหลดไฟล์เข้าสู่ usegalaxy.eu
+![image](https://user-images.githubusercontent.com/70691598/148321189-ec2a6b58-e78b-4d63-998b-7a748258977e.png)
+
