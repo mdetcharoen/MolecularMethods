@@ -2,8 +2,11 @@
 เราจะใช้ข้อมูลจำลองจากงานวิจัยของผมเองนะครับ นักศึกษาจะได้ข้อมูลที่เป็นไฟล์ fastq ที่ ตัวย่อของไฟล์ fastq มีได้เป็น fq และ fastq ไฟล์ข้อมูลได้มาจากตัวอย่างดิน ดินถูกนำไปสกัดดีเอ็นเอแล้วนำดีเอ็นเอที่ได้ไปหาลำดับเบสด้วยเทคโนโลยี next-generation sequencing ของบริษัท Illumina 
 1. นักศึกษาดาวน์โหลดไฟล์
 sub4.fq
+https://github.com/mdetcharoen/MolecularMethods/blob/main/sub4.fq
+
 ลองเปิดไฟล์ด้วย text editor software เช่น Notepad หรือ Notepad ++ หรือลองเปิดใน terminal ด้วยคำสั่ง cat เช่น cat sub4.fq หรือ head sub4.fq
 สังเกตความแตกต่างระหว่างไฟล์ fasta และ fastq
+
 ![image](https://user-images.githubusercontent.com/70691598/148346653-2e76016d-32c8-420d-8e97-2698959915e4.png)
 
 
