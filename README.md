@@ -35,3 +35,6 @@ sub1.fq และ sub2.fq
 
 7. รอ ระหว่างนี้จะเห็นไฟล์ output ที่ได้จากขั้นตอนต่าง ๆ ในช่อง history ทางขวามือ
 ![image](https://user-images.githubusercontent.com/70691598/148348457-d7f44c30-2d3f-46e2-8b08-9beaeae8a1f5.png)
+8. กดดูผล fastQC 
+![image](https://user-images.githubusercontent.com/70691598/148349994-36dd7490-19b1-4d85-b852-9354b2561cf6.png)
+![image](https://user-images.githubusercontent.com/70691598/148350073-0516ab81-70d1-412d-8ba6-2ba25ab177fd.png)
