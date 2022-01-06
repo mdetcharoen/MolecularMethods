@@ -26,3 +26,12 @@ sub1.fq และ sub2.fq
 3. อัพโหลดไฟล์เข้าสู่ usegalaxy.eu
 ![image](https://user-images.githubusercontent.com/70691598/148321189-ec2a6b58-e78b-4d63-998b-7a748258977e.png)
 
+4. เมื่ออัพโหลดไฟล์เสร็จแล้วให้เข้าสู่ workflow ที่ผมทำขึ้นครับ คลิกที่ลิงค์นี้ https://usegalaxy.eu/u/detcharoen/w/metagenomics-data
+5. กดที่ปุ่ม run workflow ที่มุมบนขวา
+![image](https://user-images.githubusercontent.com/70691598/148347731-ca0ae72b-d7bd-446e-b2ff-4c0931b51a2f.png)
+
+6. เลือกไฟล์ sub4.fq แล้วกด Run Workflow
+![image](https://user-images.githubusercontent.com/70691598/148348197-df130a27-bf35-40bb-9137-ba9e6ac0d737.png)
+
+7. รอ ระหว่างนี้จะเห็นไฟล์ output ที่ได้จากขั้นตอนต่าง ๆ ในช่อง history ทางขวามือ
+![image](https://user-images.githubusercontent.com/70691598/148348457-d7f44c30-2d3f-46e2-8b08-9beaeae8a1f5.png)
