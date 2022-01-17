@@ -1,0 +1,282 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "Analyses of metagenomics data - The global picture",
+    "format-version": "0.1",
+    "name": "Metagenomics Data",
+    "steps": {
+        "0": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "SRR606451_pampa.fasta"
+                }
+            ],
+            "label": "SRR606451_pampa.fasta",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "bottom": 466.390625,
+                "height": 82.171875,
+                "left": 516,
+                "right": 716,
+                "top": 384.21875,
+                "width": 200,
+                "x": 516,
+                "y": 384.21875
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "4283d376-5198-4104-9c3c-797a2f1114bc",
+            "workflow_outputs": []
+        },
+        "1": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.1.1+galaxy1",
+            "errors": null,
+            "id": 1,
+            "input_connections": {
+                "single_paired|input_sequences": {
+                    "id": 0,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Kraken2",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "bottom": 376.015625,
+                "height": 133.953125,
+                "left": 750,
+                "right": 950,
+                "top": 242.0625,
+                "width": 200,
+                "x": 750,
+                "y": 242.0625
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/kraken2/kraken2/2.1.1+galaxy1",
+            "tool_shed_repository": {
+                "changeset_revision": "e674066930b2",
+                "name": "kraken2",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"confidence\": \"0.0\", \"kraken2_database\": \"pluspf2021-05\", \"min_base_quality\": \"0\", \"minimum_hit_groups\": \"2\", \"quick\": \"false\", \"report\": {\"create_report\": \"false\", \"use_mpa_style\": \"false\", \"report_zero_counts\": \"false\", \"report_minimizer_data\": \"false\"}, \"single_paired\": {\"single_paired_selector\": \"no\", \"__current_case__\": 2, \"input_sequences\": {\"__class__\": \"ConnectedValue\"}}, \"split_reads\": \"false\", \"use_names\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "2.1.1+galaxy1",
+            "type": "tool",
+            "uuid": "1b22d317-acde-4365-930f-7aa68abec157",
+            "workflow_outputs": [
+                {
+                    "label": "Kraken2 on input dataset(s): Classification",
+                    "output_name": "output",
+                    "uuid": "4a459aba-018e-4904-943f-428f932fbf5e"
+                }
+            ]
+        },
+        "2": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0",
+            "errors": null,
+            "id": 2,
+            "input_connections": {
+                "input_file": {
+                    "id": 0,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool FastQC",
+                    "name": "adapters"
+                },
+                {
+                    "description": "runtime parameter for tool FastQC",
+                    "name": "contaminants"
+                },
+                {
+                    "description": "runtime parameter for tool FastQC",
+                    "name": "input_file"
+                },
+                {
+                    "description": "runtime parameter for tool FastQC",
+                    "name": "limits"
+                }
+            ],
+            "label": null,
+            "name": "FastQC",
+            "outputs": [
+                {
+                    "name": "html_file",
+                    "type": "html"
+                },
+                {
+                    "name": "text_file",
+                    "type": "txt"
+                }
+            ],
+            "position": {
+                "bottom": 729.359375,
+                "height": 296.296875,
+                "left": 799,
+                "right": 999,
+                "top": 433.0625,
+                "width": 200,
+                "x": 799,
+                "y": 433.0625
+            },
+            "post_job_actions": {
+                "HideDatasetActiontext_file": {
+                    "action_arguments": {},
+                    "action_type": "HideDatasetAction",
+                    "output_name": "text_file"
+                }
+            },
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.73+galaxy0",
+            "tool_shed_repository": {
+                "changeset_revision": "3d0c7bdf12f5",
+                "name": "fastqc",
+                "owner": "devteam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"adapters\": {\"__class__\": \"RuntimeValue\"}, \"contaminants\": {\"__class__\": \"RuntimeValue\"}, \"input_file\": {\"__class__\": \"RuntimeValue\"}, \"kmers\": \"7\", \"limits\": {\"__class__\": \"RuntimeValue\"}, \"min_length\": null, \"nogroup\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.73+galaxy0",
+            "type": "tool",
+            "uuid": "ed9d707e-e94b-4bd4-9c4a-a6732ae06d4f",
+            "workflow_outputs": [
+                {
+                    "label": "FastQC on input dataset(s): Webpage",
+                    "output_name": "html_file",
+                    "uuid": "d0d81170-adff-470c-bb39-80c92674aa23"
+                }
+            ]
+        },
+        "3": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken2tax/Kraken2Tax/1.1",
+            "errors": null,
+            "id": 3,
+            "input_connections": {
+                "input": {
+                    "id": 1,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Convert Kraken",
+                    "name": "input"
+                }
+            ],
+            "label": null,
+            "name": "Convert Kraken",
+            "outputs": [
+                {
+                    "name": "out_file",
+                    "type": "taxonomy"
+                }
+            ],
+            "position": {
+                "bottom": 367.625,
+                "height": 113.5625,
+                "left": 1013,
+                "right": 1213,
+                "top": 254.0625,
+                "width": 200,
+                "x": 1013,
+                "y": 254.0625
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/devteam/kraken2tax/Kraken2Tax/1.1",
+            "tool_shed_repository": {
+                "changeset_revision": "d844fdcce44e",
+                "name": "kraken2tax",
+                "owner": "devteam",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"input\": {\"__class__\": \"RuntimeValue\"}, \"ncbi_taxonomy\": \"2020-12-03\", \"read_name\": \"2\", \"tax_id\": \"3\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "1.1",
+            "type": "tool",
+            "uuid": "d96b4ef9-accc-485e-8615-cbf94ffeee12",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "out_file",
+                    "uuid": "a48d8ca1-5372-4ec9-8afd-d66f4e574427"
+                }
+            ]
+        },
+        "4": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/crs4/taxonomy_krona_chart/taxonomy_krona_chart/2.7.1",
+            "errors": null,
+            "id": 4,
+            "input_connections": {
+                "type_of_data|input": {
+                    "id": 3,
+                    "output_name": "out_file"
+                }
+            },
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Krona pie chart",
+                    "name": "type_of_data"
+                }
+            ],
+            "label": null,
+            "name": "Krona pie chart",
+            "outputs": [
+                {
+                    "name": "output",
+                    "type": "html"
+                }
+            ],
+            "position": {
+                "bottom": 384.015625,
+                "height": 133.953125,
+                "left": 1280,
+                "right": 1480,
+                "top": 250.0625,
+                "width": 200,
+                "x": 1280,
+                "y": 250.0625
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/crs4/taxonomy_krona_chart/taxonomy_krona_chart/2.7.1",
+            "tool_shed_repository": {
+                "changeset_revision": "1334cb4c6b68",
+                "name": "taxonomy_krona_chart",
+                "owner": "crs4",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"combine_inputs\": \"false\", \"root_name\": \"Root\", \"type_of_data\": {\"type_of_data_selector\": \"taxonomy\", \"__current_case__\": 0, \"input\": {\"__class__\": \"RuntimeValue\"}, \"max_rank\": \"8\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "2.7.1",
+            "type": "tool",
+            "uuid": "aeda018d-10bb-45fa-8272-2494079345b4",
+            "workflow_outputs": [
+                {
+                    "label": "Krona pie chart on input dataset(s): HTML",
+                    "output_name": "output",
+                    "uuid": "b68712c0-6918-46af-9798-7eecca431662"
+                }
+            ]
+        }
+    },
+    "tags": [
+        "metagenomics"
+    ],
+    "uuid": "be67a55d-7093-4a44-9685-853ed0471374",
+    "version": 7
+}
