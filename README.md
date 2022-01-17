@@ -12,7 +12,7 @@ https://github.com/mdetcharoen/MolecularMethods/blob/main/sub4.fq
 
 2. ศึกษาสถิติพื้นฐานของข้อมูลทั้งสองก่อนนำไปวิเคราะห์ด้วย fastqc 
 ดาวน์โหลดซอฟต์แวร์ fastqc จาก https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
-คลิกที่ run_fastqc แล้วเลือกไฟล์ sub1.fq
+คลิกที่ run_fastqc แล้วเลือกไฟล์ sub4.fq
 
 ![image](https://user-images.githubusercontent.com/70691598/148317160-09bf4377-eaa2-4529-ae86-44dd67fe847c.png)
 
